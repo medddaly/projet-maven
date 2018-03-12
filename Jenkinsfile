@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = sudo docker.build("medddaly/projet-maven")
+        app = docker.build("medddaly/projet-maven")
     }
 
     stage('Test image') {
